@@ -23,9 +23,9 @@ CREATE TABLE car (
     model TEXT,
     year INTEGER,
     insurance TEXT
-)
+);
 
 CREATE TABLE person_car (
     person_id INTEGER,
     car_id INTEGER
-)
+);
