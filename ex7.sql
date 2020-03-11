@@ -61,7 +61,7 @@ DELETE FROM pet WHERE dead = 1;
 /* make sure dead pets are gone */
 SELECT * FROM pet;
 
-INSERT INTO pet(id, name, breed, age, dead) VALUES (1, 'Gigantor', 'Robot', 1, 0);
+INSERT INTO pet(id, name, breed, age, dead) VALUES (1, 'Gigantor', 'Robot', 1, 1);
 
 SELECT * FROM pet;
 
