@@ -1,8 +1,8 @@
-DROP TABLE person;
-DROP TABLE pet;
-DROP TABLE person_pet;
-DROP TABLE car;
-DROP TABLE person_car;
+DROP TABLE IF EXISTS person;
+DROP TABLE IF EXISTS pet;
+DROP TABLE IF EXISTS person_pet;
+DROP TABLE IF EXISTS car;
+DROP TABLE IF EXISTS person_car;
 
 CREATE TABLE person (
     id INTEGER PRIMARY KEY,
@@ -10,6 +10,9 @@ CREATE TABLE person (
     last_name TEXT,
     age INTEGER
 );
+
+ALTER TABLE person ADD COLUMN height INTEGER;
+ALTER TABLE person ADD COLUMN weight INTEGER;
 
 CREATE TABLE pet (
     id INTEGER PRIMARY KEY,
