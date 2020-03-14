@@ -11,7 +11,7 @@ CREATE TABLE person (
     age INTEGER
 );
 
-ALTER TABLE person ADD COLUMN height INTEGER;
+ALTER TABLE person ADD COLUMN height TEXT;
 ALTER TABLE person ADD COLUMN weight INTEGER;
 
 CREATE TABLE pet (
